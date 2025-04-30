@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor | Blogr landing page">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blogr landing page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="/" class="header-logo">
+        <img src="images/logo.svg" alt="MyCompany Logo" draggable="false">
+      </a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="header-hamburger" aria-label="Toggle Navigation" aria-expanded="false"
+        aria-controls="header-navigation">
+        <div class="hamburger-wrapper">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+      </button>
+
+      <!-- Main Navigation -->
+      <nav class="header-navigation">
+        <div class="nav-overlay"></div>
+
+        <div class="nav-wrapper">
+          <!-- Links Section -->
+          <div class="nav-links">
+            <!-- Product Links -->
+            <div class="nav-group">
+              <div class="nav-title">
+                <h3>Product</h3>
+              </div>
+
+              <ul class="nav-list">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div class="nav-group">
+              <div class="nav-title">
+                <h3>Company</h3>
+              </div>
+
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <!-- Connect Links -->
+            <div class="nav-group">
+              <div class="nav-title">
+                <h3>Connect</h3>
+              </div>
+
+              <ul class="nav-list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Authentication Section -->
+          <div class="nav-auth" aria-label="user-actions">
+            <ul class="nav-list">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-title">A modern publishing platform</h1>
+        <p class="hero-desc">Grow your audience and build your online brand</p>
+
+        <div class="hero-actions">
+          <a href="#">Start for Free</a>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="features-section">
+      <div class="features-container">
+        <h2 class="features-title">Designed for the future</h2>
+
+        <div class="features-content">
+          <div class="features-text">
+            <article class="feature-item">
+              <h3>Introducing an extensible editor</h3>
+              <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.</p>
+            </article>
+
+            <article class="feature-item">
+              <h3>Robust content management</h3>
+              <p>Flexible content management enables users to easily move through posts. Increase the usability of your
+                blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+                control.</p>
+            </article>
+          </div>
+
+          <div class="features-image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/illustration-editor-desktop.svg">
+              <img src="images/illustration-editor-mobile.svg" alt="illustration-editor" draggable="false">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- State of the Art Infrastructure Section -->
+    <section class="infrastructure-section">
+      <div class="infrastructure-container">
+        <div class="infrastructure-image">
+          <img src="images/illustration-phones.svg" alt="illustration-phones" draggable="false">
+        </div>
+        
+        <div class="infrastructure-wrapper">
+          <div class="infrastructure-content">
+            <h2>State of the Art Infrastructure</h2>
+            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+              connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your
+              site competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Features Section -->
+    <section class="final-features-section">
+      <div class="final-features-container">
+        <div class="final-features-image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/illustration-laptop-desktop.svg">
+            <img src="images/illustration-laptop-mobile.svg" alt="illustration-editor" draggable="false">
+          </picture>
+        </div>
+
+        <div class="final-features-content">
+          <article class="feature-block">
+            <h3>Free, open, simple</h3>
+            <p>Blogr is a free and open source application backed by a large community of helpful developers. It
+              supports features such as code syntax highlighting, RSS feeds, social media integration, third-party
+              commenting
+              tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+              learn.</p>
+          </article>
+
+          <article class="feature-block">
+            <h3>Powerful tooling</h3>
+            <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and
+              deployment a breeze, but capable of producing even the most complicated sites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Logo -->
+      <a href="/" class="footer-logo">
+        <img src="images/logo.svg" alt="MyCompany Logo" draggable="false">
+      </a>
+
+      <!-- Navigation Sections -->
+      <nav class="footer-nav">
+        <!-- Product Links -->
+        <div class="nav-section">
+          <h3>Product</h3>
+
+          <ul class="nav-list">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="nav-section">
+          <h3>Company</h3>
+
+          <ul class="nav-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect Links -->
+        <div class="nav-section">
+          <h3>Connect</h3>
+
+          <ul class="nav-list">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Footer Credit -->
+      <div class="footer-credit">
+        <p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/arisdwii" target="_blank">arisdwii</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
